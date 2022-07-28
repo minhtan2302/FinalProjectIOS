@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="FinalIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonLogin" destination="Iyx-pk-3qD" id="yzn-TP-x5m"/>
+                <outlet property="buttonSignUp" destination="GRf-rt-geX" id="dUD-V6-0fu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="model-2" translatesAutoresizingMaskIntoConstraints="NO" id="yNO-9P-uKx">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-create" translatesAutoresizingMaskIntoConstraints="NO" id="pI6-LL-xVi" colorLabel="IBBuiltInLabel-Orange">
+                    <rect key="frame" x="-43" y="198" width="500" height="500"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PM7-7P-App">
+                    <rect key="frame" x="30" y="722" width="354" height="110"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRf-rt-geX">
+                            <rect key="frame" x="0.0" y="60" width="354" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Rcf-tE-rkr"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Sign Up">
+                                <backgroundConfiguration key="background"/>
+                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="nextPageSign:" destination="-1" eventType="touchUpInside" id="ckn-Fq-IVk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyx-pk-3qD">
+                            <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="x1i-Oj-9Y7"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Login">
+                                <backgroundConfiguration key="background">
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </backgroundConfiguration>
+                                <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="nextPageLogin:" destination="-1" eventType="touchUpInside" id="Xs9-bg-kOv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="8dR-h0-hHy"/>
+                        <constraint firstItem="GRf-rt-geX" firstAttribute="leading" secondItem="PM7-7P-App" secondAttribute="leading" id="HQi-me-2B8"/>
+                        <constraint firstAttribute="bottom" secondItem="GRf-rt-geX" secondAttribute="bottom" id="PSO-eC-r0v"/>
+                        <constraint firstAttribute="trailing" secondItem="GRf-rt-geX" secondAttribute="trailing" id="U4Z-az-wgP"/>
+                        <constraint firstAttribute="trailing" secondItem="Iyx-pk-3qD" secondAttribute="trailing" id="Yj9-J8-vBE"/>
+                        <constraint firstItem="Iyx-pk-3qD" firstAttribute="top" secondItem="PM7-7P-App" secondAttribute="top" id="oFU-hR-WO6"/>
+                        <constraint firstItem="Iyx-pk-3qD" firstAttribute="leading" secondItem="PM7-7P-App" secondAttribute="leading" id="pgd-IZ-6zw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="pI6-LL-xVi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4aj-ds-wpG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PM7-7P-App" secondAttribute="trailing" constant="30" id="CeY-Bt-Drq"/>
+                <constraint firstItem="pI6-LL-xVi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="F8F-EP-MhV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="PM7-7P-App" secondAttribute="bottom" constant="30" id="Y8Q-Ud-nG8"/>
+                <constraint firstItem="PM7-7P-App" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="kOO-EU-Mnp"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="125.89285714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo-create" width="500" height="500"/>
+        <image name="model-2" width="4480" height="6720"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

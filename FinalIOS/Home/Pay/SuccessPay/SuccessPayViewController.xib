@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessPayViewController" customModule="FinalIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="continueView" destination="915-VD-nSd" id="TgH-7r-qGc"/>
+                <outlet property="view" destination="def-fb-2rF" id="ByA-ad-itx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="def-fb-2rF">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pay" translatesAutoresizingMaskIntoConstraints="NO" id="zlo-PW-kYn">
+                    <rect key="frame" x="132" y="273" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="sdX-IK-M0h"/>
+                        <constraint firstAttribute="height" constant="150" id="zY7-gB-3I9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successful !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOi-1u-m47">
+                    <rect key="frame" x="40" y="443" width="334" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="eMs-M1-ZaG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have successfully your. Comfirm Payment send!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buO-7j-m7g">
+                    <rect key="frame" x="40" y="498" width="334" height="45.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="915-VD-nSd">
+                    <rect key="frame" x="25" y="762" width="364" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="kRR-Ka-8yN"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Continue Shopping">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="continuewButton:" destination="-1" eventType="touchUpInside" id="RwH-Xj-255"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="aQn-e1-fXa"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="aQn-e1-fXa" firstAttribute="trailing" secondItem="buO-7j-m7g" secondAttribute="trailing" constant="40" id="AME-Zc-EXI"/>
+                <constraint firstItem="aQn-e1-fXa" firstAttribute="trailing" secondItem="zOi-1u-m47" secondAttribute="trailing" constant="40" id="HMj-PR-uTR"/>
+                <constraint firstItem="915-VD-nSd" firstAttribute="leading" secondItem="aQn-e1-fXa" secondAttribute="leading" constant="25" id="IoI-fA-je5"/>
+                <constraint firstItem="buO-7j-m7g" firstAttribute="leading" secondItem="aQn-e1-fXa" secondAttribute="leading" constant="40" id="Miz-dC-f9a"/>
+                <constraint firstItem="aQn-e1-fXa" firstAttribute="bottom" secondItem="915-VD-nSd" secondAttribute="bottom" constant="50" id="UKU-SM-IeP"/>
+                <constraint firstItem="buO-7j-m7g" firstAttribute="top" secondItem="zOi-1u-m47" secondAttribute="bottom" constant="15" id="Zo9-iV-M7L"/>
+                <constraint firstItem="zlo-PW-kYn" firstAttribute="centerX" secondItem="def-fb-2rF" secondAttribute="centerX" id="aYu-uV-JwM"/>
+                <constraint firstItem="aQn-e1-fXa" firstAttribute="trailing" secondItem="915-VD-nSd" secondAttribute="trailing" constant="25" id="emw-lE-hhf"/>
+                <constraint firstItem="zOi-1u-m47" firstAttribute="top" secondItem="zlo-PW-kYn" secondAttribute="bottom" constant="20" id="fnd-Dh-sIZ"/>
+                <constraint firstItem="zOi-1u-m47" firstAttribute="leading" secondItem="aQn-e1-fXa" secondAttribute="leading" constant="40" id="rAF-HI-imm"/>
+                <constraint firstItem="zlo-PW-kYn" firstAttribute="centerY" secondItem="def-fb-2rF" secondAttribute="centerY" constant="-100" id="uX3-ja-m20"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pay" width="330" height="154"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

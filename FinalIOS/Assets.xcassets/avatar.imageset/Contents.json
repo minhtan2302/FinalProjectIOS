@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Top-Anh-Avatar-dep-doc-ngau-lam-hinh-dai-dien-Facebook-Zalo.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
