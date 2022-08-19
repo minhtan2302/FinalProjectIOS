@@ -15,7 +15,7 @@ final class DataProfile {
     }
 }
 let imageProfile : [String] = ["in1","in2","in3","in4"]
-let nameProfile: [String] = ["Personal Details","My Order","My Favourites","Settings"]
+let nameProfile: [String] = ["Personal Details","History","My Favourites","Settings"]
 extension DataProfile {
     static func getData() -> [DataProfile]{
         var datas: [DataProfile] = []

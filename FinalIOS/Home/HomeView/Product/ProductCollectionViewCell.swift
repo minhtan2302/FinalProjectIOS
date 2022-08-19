@@ -20,10 +20,11 @@ import UIKit
 
 
 struct ProductCollectionViewCellViewData {
+    var id : Int
     var image: String
     var name: String
     var type: String
-    var price: String
+    var price: Double
 }
 
 class ProductCollectionViewCell: UICollectionViewCell {
@@ -53,10 +54,11 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     // Cach viet dung
     func updateData(data: ProductCollectionViewCellViewData?) {
-        imageProduct.image = UIImage(named: data!.image ?? "")
+        imageProduct.downloaded(from: data!.image, completion: nil)
+//        imageProduct.image = UIImage(named: data!.image ?? "")
         titleLabel.text = data?.name
         subTitleLabel.text = data?.type
-        priceLabel.text = data?.price
+        priceLabel.text = "$\(data?.price ?? 0)"
     }
 }
 

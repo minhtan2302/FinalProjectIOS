@@ -7,18 +7,6 @@
 
 import UIKit
 
-protocol ViewAmountDelegate{
-    func didClick(view: DetaiProductViewController, number: Int)
-}
-
-struct DetailProductViewData {
-    var imagePaths: [String]
-    var nameTitle: String
-    var type : String
-    var desc : String
-    var price : String
-}
-
 class DetaiProductViewController: UIViewController {
     
     // detai Product
@@ -26,30 +14,33 @@ class DetaiProductViewController: UIViewController {
     @IBOutlet weak var subnamePro: UILabel!
     @IBOutlet weak var pricePro: UILabel!
     @IBOutlet weak var descriptionPro: UILabel!
+    
+    var viewData: ProductData? {
         
-    var viewData: DetailProductViewData? {
-//        willSet {
-//            viewData // gia tri
-//            newValue
-//        }
+        //        willSet {
+        //            viewData // gia tri
+        //            newValue
+        //        }
         didSet {
-            print("DEBUG LOG: did set ViewData")
+//            print("DEBUG LOG: did set ViewData")
             updateView()
         }
     }
     
-    var count = 1
+    var count: Int = 1
     @IBAction func minusButton(_ sender: Any) {
         if count == 1 {
             return (count = 1)
         }else {
             count -= 1
             amountLabel.text = "\(count)"
+            pricePro.text = "\((viewData?.priceProduct ?? 1) * Double(count))"
         }
     }
     @IBAction func plusButton(_ sender: Any) {
         count += 1
         amountLabel.text = "\(count)"
+        pricePro.text = "\((viewData?.priceProduct ?? 1) * Double(count))"
     }
     //    var delegate: ViewAmountDelegate
     @IBOutlet weak var amountLabel: UILabel!
@@ -66,18 +57,51 @@ class DetaiProductViewController: UIViewController {
     @IBOutlet weak var indexProduct: UIView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var favoriteButtonView: UIView!
+    @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var backBlackButton: UIView!
     
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    @IBAction func nextToCart(_ sender: Any) {
+        let vc = CartViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     @IBAction func addToCart(_ sender: Any) {
+        if let viewData = viewData {
+            let itemProduct: CardItem = CardItem(product: viewData, amout:  count)
+            cardItemManager.addItem(item: itemProduct)
+        }
+
         let vc = CartViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func favoriteButton(_ sender: Any) {
-        self.favoriteButtonView.backgroundColor = UIColor.red
+        
+        if let viewData = viewData {
+            let itemFavorite: FavoriteItem = FavoriteItem(productFavorite: viewData)
+            favoriteItemManager.addFavorite(item: itemFavorite)
+        }
+        
+        if (favoriteButtonView.backgroundColor == UIColor.white) {
+            favoriteButtonView.backgroundColor = UIColor.red
+            favoriteButton.backgroundColor = UIColor.red
+        }
+        else if (favoriteButtonView.backgroundColor == UIColor.red) {
+            favoriteButtonView.backgroundColor = UIColor.white
+            favoriteButton.backgroundColor = UIColor.white
+        }
     }
+    
+    @IBAction func buttonSizeS(_ sender: Any) {
+        if (sizeButtonS.backgroundColor == UIColor.white) {
+            sizeButtonS.backgroundColor = UIColor.lightGray
+        }
+        else if (sizeButtonS.backgroundColor == UIColor.lightGray) {
+            sizeButtonS.backgroundColor = UIColor.white
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -107,6 +131,19 @@ class DetaiProductViewController: UIViewController {
         sizeButtonL.layer.cornerRadius = sizeButtonL.frame.width / 2
         sizeButtonXL.layer.cornerRadius = sizeButtonXL.frame.width / 2
         sizeButtonXXL.layer.cornerRadius = sizeButtonXXL.frame.width / 2
+        
+        sizeButtonS.layer.borderWidth = 1
+        sizeButtonM.layer.borderWidth = 1
+        sizeButtonL.layer.borderWidth = 1
+        sizeButtonXL.layer.borderWidth = 1
+        sizeButtonXXL.layer.borderWidth = 1
+        
+        sizeButtonS.layer.borderColor = UIColor.darkGray.cgColor
+        sizeButtonM.layer.borderColor = UIColor.darkGray.cgColor
+        sizeButtonL.layer.borderColor = UIColor.darkGray.cgColor
+        sizeButtonXL.layer.borderColor = UIColor.darkGray.cgColor
+        sizeButtonXXL.layer.borderColor = UIColor.darkGray.cgColor
+        
         cartButton.layer.cornerRadius = cartButton.frame.width / 2
         favoriteButtonView.layer.cornerRadius = favoriteButtonView.frame.width / 2
         backBlackButton.layer.cornerRadius = backBlackButton.frame.width / 2
@@ -117,45 +154,57 @@ class DetaiProductViewController: UIViewController {
         sizeButtonXL.clipsToBounds = true
         sizeButtonXXL.clipsToBounds = true
         cartButton.clipsToBounds = true
-        favoriteButtonView.clipsToBounds = true
         backBlackButton.clipsToBounds = true
+        favoriteButtonView.clipsToBounds = true
         
         pageControl.currentPage = 2
         
         updateView()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.tabBarController?.tabBar.isHidden = true
+        
+            let object: FavoriteItem? = favoriteItemManager.productFavorite.first { subItem in
+                subItem.productFavorite.id == viewData?.id
+            }
+            if let object = object {
+                favoriteButtonView.backgroundColor = UIColor.red
+                favoriteButton.backgroundColor = UIColor.red
+            }else {
+                favoriteButtonView.backgroundColor = UIColor.white
+                favoriteButton.backgroundColor = UIColor.white
+            }
+        
     }
+    
     
     func updateView() {
         if let viewData = viewData, isViewLoaded {
-            // 1. Reload collection view
+            // 1 reload collection view
             detailCollectionView.reloadData()
-
-            // 2. Load content data
-            namePro.text = viewData.nameTitle
-            subnamePro.text = viewData.type
-            descriptionPro.text = viewData.desc
-            pricePro.text = viewData.price
-            
+            // 2. reload content data
+            namePro.text = viewData.titleProduct
+            subnamePro.text = viewData.subTitle
+            pricePro.text = "\(viewData.priceProduct)"
+            descriptionPro.text = viewData.description
         }
     }
-
+    
 }
 extension DetaiProductViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewData?.imagePaths.count ?? 0
+        return viewData?.imagePath.count ?? 0
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HomeCollectionViewCell
         let index: Int = indexPath.row
-        let imagePaths: String? = (viewData?.imagePaths[index])
+        let imagePaths: String? = viewData?.imagePath[index]
         cell.setImage(name: imagePaths ?? "")
         return cell
-        
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)

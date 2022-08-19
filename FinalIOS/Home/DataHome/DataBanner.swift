@@ -21,20 +21,14 @@ final class BannerData {
         BannerCollectionViewCellViewData(image: imageBanner, title: titleBanner, discount: discountBanner, code: codeBanner)
     }
 }
-let imageBN: [String] = ["banner-1","banner-1","banner-1"]
-let titleBN: [String] = ["On everything today","On everything today","On everything today"]
-let discountBN: [String] = ["30% Off","50% Off","70% Off"]
-let codeBN: [String] = ["With code:FSCREATION","With code:FSCREATION","With code:FSCREATION"]
+let imageBN: [String] = ["dior","prdd","gucci"]
     
 extension BannerData {
     static func getData() -> [BannerData] {
         var datas: [BannerData] = []
         for i in 1...3 {
             let images = imageBN[i - 1]
-            let titles = titleBN[i - 1]
-            let discounts = discountBN[i - 1]
-            let codes = codeBN[i - 1]
-            let data = BannerData(imageBanner: images, titleBanner: titles, discountBanner: discounts, codeBanner: codes)
+            let data = BannerData(imageBanner: images, titleBanner: "", discountBanner: "", codeBanner: "")
             datas.append(data)
         }
         return datas

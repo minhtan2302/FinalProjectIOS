@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04084E9428AB3E5400FB2D84 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04084E9228AB3E5400FB2D84 /* HistoryTableViewCell.swift */; };
+		04084E9528AB3E5400FB2D84 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04084E9328AB3E5400FB2D84 /* HistoryTableViewCell.xib */; };
+		04084E9928AB801600FB2D84 /* DetailHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04084E9728AB801600FB2D84 /* DetailHistoryViewController.swift */; };
+		04084E9A28AB801600FB2D84 /* DetailHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04084E9828AB801600FB2D84 /* DetailHistoryViewController.xib */; };
+		04084E9E28ACDDDA00FB2D84 /* DetailHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04084E9C28ACDDDA00FB2D84 /* DetailHistoryTableViewCell.swift */; };
+		04084E9F28ACDDDA00FB2D84 /* DetailHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04084E9D28ACDDDA00FB2D84 /* DetailHistoryTableViewCell.xib */; };
+		041F32FC28A2C0780089422A /* CardItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F32FB28A2C0780089422A /* CardItemsManager.swift */; };
+		041F330428A368C50089422A /* DeliveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F330228A368C50089422A /* DeliveryTableViewCell.swift */; };
+		041F330528A368C50089422A /* DeliveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041F330328A368C50089422A /* DeliveryTableViewCell.xib */; };
 		042F12D3288715CC00B11E30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F12D2288715CC00B11E30 /* AppDelegate.swift */; };
 		042F12DC288715CE00B11E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042F12DB288715CE00B11E30 /* Assets.xcassets */; };
 		042F12DF288715CE00B11E30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042F12DD288715CE00B11E30 /* LaunchScreen.storyboard */; };
@@ -42,6 +51,11 @@
 		04A2C6D5288ED95600BFFFFC /* AddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A2C6D3288ED95600BFFFFC /* AddressViewController.xib */; };
 		04A2C6DE2890EB9600BFFFFC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2C6DC2890EB9600BFFFFC /* HistoryViewController.swift */; };
 		04A2C6DF2890EB9600BFFFFC /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A2C6DD2890EB9600BFFFFC /* HistoryViewController.xib */; };
+		04CC2D6628995C9800477365 /* arrivals.json in Resources */ = {isa = PBXBuildFile; fileRef = 04CC2D6528995C9800477365 /* arrivals.json */; };
+		04CC2D6928995CBD00477365 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC2D6828995CBD00477365 /* ApiService.swift */; };
+		04CC2D6B289AB01700477365 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC2D6A289AB01700477365 /* UIImageView+Ext.swift */; };
+		04D0D58128A63EF000AECC07 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0D57F28A63EF000AECC07 /* FavouritesViewController.swift */; };
+		04D0D58228A63EF000AECC07 /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D0D58028A63EF000AECC07 /* FavouritesViewController.xib */; };
 		04E3BA9228899F8600CD2D38 /* DataBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3BA9128899F8600CD2D38 /* DataBanner.swift */; };
 		04E3BA962889B23D00CD2D38 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3BA942889B23D00CD2D38 /* WelcomeViewController.swift */; };
 		04E3BA972889B23D00CD2D38 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E3BA952889B23D00CD2D38 /* WelcomeViewController.xib */; };
@@ -59,6 +73,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04084E9228AB3E5400FB2D84 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		04084E9328AB3E5400FB2D84 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		04084E9728AB801600FB2D84 /* DetailHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHistoryViewController.swift; sourceTree = "<group>"; };
+		04084E9828AB801600FB2D84 /* DetailHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHistoryViewController.xib; sourceTree = "<group>"; };
+		04084E9C28ACDDDA00FB2D84 /* DetailHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		04084E9D28ACDDDA00FB2D84 /* DetailHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		041F32FB28A2C0780089422A /* CardItemsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemsManager.swift; sourceTree = "<group>"; };
+		041F330228A368C50089422A /* DeliveryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTableViewCell.swift; sourceTree = "<group>"; };
+		041F330328A368C50089422A /* DeliveryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryTableViewCell.xib; sourceTree = "<group>"; };
 		042F12CF288715CC00B11E30 /* FinalIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042F12D2288715CC00B11E30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		042F12DB288715CE00B11E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +119,11 @@
 		04A2C6D3288ED95600BFFFFC /* AddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressViewController.xib; sourceTree = "<group>"; };
 		04A2C6DC2890EB9600BFFFFC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		04A2C6DD2890EB9600BFFFFC /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		04CC2D6528995C9800477365 /* arrivals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = arrivals.json; sourceTree = "<group>"; };
+		04CC2D6828995CBD00477365 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		04CC2D6A289AB01700477365 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		04D0D57F28A63EF000AECC07 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		04D0D58028A63EF000AECC07 /* FavouritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
 		04E3BA9128899F8600CD2D38 /* DataBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBanner.swift; sourceTree = "<group>"; };
 		04E3BA942889B23D00CD2D38 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		04E3BA952889B23D00CD2D38 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
@@ -123,6 +151,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04084E9128AB3E2F00FB2D84 /* HistoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				04084E9228AB3E5400FB2D84 /* HistoryTableViewCell.swift */,
+				04084E9328AB3E5400FB2D84 /* HistoryTableViewCell.xib */,
+			);
+			path = HistoryCell;
+			sourceTree = "<group>";
+		};
+		04084E9628AB7FFA00FB2D84 /* DetailHistory */ = {
+			isa = PBXGroup;
+			children = (
+				04084E9728AB801600FB2D84 /* DetailHistoryViewController.swift */,
+				04084E9828AB801600FB2D84 /* DetailHistoryViewController.xib */,
+			);
+			path = DetailHistory;
+			sourceTree = "<group>";
+		};
+		04084E9B28ACDDB300FB2D84 /* DetailHistoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				04084E9C28ACDDDA00FB2D84 /* DetailHistoryTableViewCell.swift */,
+				04084E9D28ACDDDA00FB2D84 /* DetailHistoryTableViewCell.xib */,
+			);
+			path = DetailHistoryCell;
+			sourceTree = "<group>";
+		};
+		041F32FD28A367680089422A /* DeliveryCell */ = {
+			isa = PBXGroup;
+			children = (
+				041F330228A368C50089422A /* DeliveryTableViewCell.swift */,
+				041F330328A368C50089422A /* DeliveryTableViewCell.xib */,
+			);
+			path = DeliveryCell;
+			sourceTree = "<group>";
+		};
 		042F12C6288715CC00B11E30 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +206,8 @@
 		042F12D1288715CC00B11E30 /* FinalIOS */ = {
 			isa = PBXGroup;
 			children = (
+				04CC2D6728995CB100477365 /* API service */,
+				04CC2D6428995C6C00477365 /* DummyData */,
 				04A2C6D62890EB1F00BFFFFC /* Tabbar */,
 				047381B9288A500600B41858 /* Page */,
 				047B1304288874C200370284 /* Tutorial */,
@@ -151,6 +217,7 @@
 				042F12DB288715CE00B11E30 /* Assets.xcassets */,
 				042F12DD288715CE00B11E30 /* LaunchScreen.storyboard */,
 				042F12E0288715CE00B11E30 /* Info.plist */,
+				04CC2D6A289AB01700477365 /* UIImageView+Ext.swift */,
 			);
 			path = FinalIOS;
 			sourceTree = "<group>";
@@ -235,7 +302,7 @@
 		047381B9288A500600B41858 /* Page */ = {
 			isa = PBXGroup;
 			children = (
-				047381C6288A6A0C00B41858 /* Profile */,
+				04D0D57E28A63EAB00AECC07 /* Favourites */,
 				047381BA288A501D00B41858 /* Language */,
 			);
 			path = Page;
@@ -322,6 +389,7 @@
 		04A2C6D62890EB1F00BFFFFC /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				047381C6288A6A0C00B41858 /* Profile */,
 				04A2C6D72890EB2A00BFFFFC /* History */,
 			);
 			path = Tabbar;
@@ -330,10 +398,38 @@
 		04A2C6D72890EB2A00BFFFFC /* History */ = {
 			isa = PBXGroup;
 			children = (
+				04084E9B28ACDDB300FB2D84 /* DetailHistoryCell */,
+				04084E9628AB7FFA00FB2D84 /* DetailHistory */,
+				04084E9128AB3E2F00FB2D84 /* HistoryCell */,
 				04A2C6DC2890EB9600BFFFFC /* HistoryViewController.swift */,
 				04A2C6DD2890EB9600BFFFFC /* HistoryViewController.xib */,
 			);
 			path = History;
+			sourceTree = "<group>";
+		};
+		04CC2D6428995C6C00477365 /* DummyData */ = {
+			isa = PBXGroup;
+			children = (
+				04CC2D6528995C9800477365 /* arrivals.json */,
+			);
+			path = DummyData;
+			sourceTree = "<group>";
+		};
+		04CC2D6728995CB100477365 /* API service */ = {
+			isa = PBXGroup;
+			children = (
+				04CC2D6828995CBD00477365 /* ApiService.swift */,
+			);
+			path = "API service";
+			sourceTree = "<group>";
+		};
+		04D0D57E28A63EAB00AECC07 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				04D0D57F28A63EF000AECC07 /* FavouritesViewController.swift */,
+				04D0D58028A63EF000AECC07 /* FavouritesViewController.xib */,
+			);
+			path = Favourites;
 			sourceTree = "<group>";
 		};
 		04E3BA932889B21D00CD2D38 /* Welcome */ = {
@@ -378,6 +474,7 @@
 			isa = PBXGroup;
 			children = (
 				04ECA4C728894A3A00461143 /* DataProduct.swift */,
+				041F32FB28A2C0780089422A /* CardItemsManager.swift */,
 				04E3BA9128899F8600CD2D38 /* DataBanner.swift */,
 			);
 			path = DataHome;
@@ -395,6 +492,7 @@
 		04F93938288AF66C00688A7D /* Pay */ = {
 			isa = PBXGroup;
 			children = (
+				041F32FD28A367680089422A /* DeliveryCell */,
 				04A2C6D1288ED93700BFFFFC /* Delivery Address */,
 				04F93939288AF67C00688A7D /* SuccessPay */,
 				042F12FF2887C46E00B11E30 /* Cart */,
@@ -477,8 +575,13 @@
 				047B130E2888755100370284 /* CustomTutorialCollectionViewCell.xib in Resources */,
 				04A2C6DF2890EB9600BFFFFC /* HistoryViewController.xib in Resources */,
 				047381CF288A89D300B41858 /* ProfileTableViewCell.xib in Resources */,
+				04084E9F28ACDDDA00FB2D84 /* DetailHistoryTableViewCell.xib in Resources */,
 				042F12DF288715CE00B11E30 /* LaunchScreen.storyboard in Resources */,
+				04084E9528AB3E5400FB2D84 /* HistoryTableViewCell.xib in Resources */,
 				04A2C6D5288ED95600BFFFFC /* AddressViewController.xib in Resources */,
+				041F330528A368C50089422A /* DeliveryTableViewCell.xib in Resources */,
+				04CC2D6628995C9800477365 /* arrivals.json in Resources */,
+				04D0D58228A63EF000AECC07 /* FavouritesViewController.xib in Resources */,
 				04ECA4C528893DFB00461143 /* ProductCollectionViewCell.xib in Resources */,
 				042F13082887E0ED00B11E30 /* CartTableViewCell.xib in Resources */,
 				04F93937288AD5FE00688A7D /* SuccessViewController.xib in Resources */,
@@ -492,6 +595,7 @@
 				047381CA288A6A2400B41858 /* ProfileViewController.xib in Resources */,
 				047381BE288A504400B41858 /* LanguageViewController.xib in Resources */,
 				04F9393D288AF69300688A7D /* SuccessPayViewController.xib in Resources */,
+				04084E9A28AB801600FB2D84 /* DetailHistoryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +606,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04084E9928AB801600FB2D84 /* DetailHistoryViewController.swift in Sources */,
+				04D0D58128A63EF000AECC07 /* FavouritesViewController.swift in Sources */,
 				042F12E92887171E00B11E30 /* DetaiProductViewController.swift in Sources */,
 				042F130D2887FE2200B11E30 /* TutorialViewController.swift in Sources */,
 				047381BD288A504400B41858 /* LanguageViewController.swift in Sources */,
@@ -509,13 +615,17 @@
 				047D4409288A91420084659E /* DataProfile.swift in Sources */,
 				04ECA4C428893DFB00461143 /* ProductCollectionViewCell.swift in Sources */,
 				04A2C6DE2890EB9600BFFFFC /* HistoryViewController.swift in Sources */,
+				041F330428A368C50089422A /* DeliveryTableViewCell.swift in Sources */,
 				042F12D3288715CC00B11E30 /* AppDelegate.swift in Sources */,
 				042F13022887C48000B11E30 /* CartViewController.swift in Sources */,
+				04CC2D6928995CBD00477365 /* ApiService.swift in Sources */,
 				04E3BA962889B23D00CD2D38 /* WelcomeViewController.swift in Sources */,
 				047381C5288A606A00B41858 /* DataLanguage.swift in Sources */,
 				042F131428880C6600B11E30 /* Data.swift in Sources */,
 				04ECA4C828894A3A00461143 /* DataProduct.swift in Sources */,
+				04084E9E28ACDDDA00FB2D84 /* DetailHistoryTableViewCell.swift in Sources */,
 				04ECA4BF28893DC900461143 /* BannerCollectionViewCell.swift in Sources */,
+				04CC2D6B289AB01700477365 /* UIImageView+Ext.swift in Sources */,
 				042F12EE28871ADD00B11E30 /* HomeCollectionViewCell.swift in Sources */,
 				042F12FC2887A03100B11E30 /* RegisterViewController.swift in Sources */,
 				042F12F828879FDA00B11E30 /* LoginViewController.swift in Sources */,
@@ -528,6 +638,8 @@
 				042F13072887E0ED00B11E30 /* CartTableViewCell.swift in Sources */,
 				04F93936288AD5FE00688A7D /* SuccessViewController.swift in Sources */,
 				04ECA4BA28890AA000461143 /* HomeViewController.swift in Sources */,
+				04084E9428AB3E5400FB2D84 /* HistoryTableViewCell.swift in Sources */,
+				041F32FC28A2C0780089422A /* CardItemsManager.swift in Sources */,
 				04A2C6D4288ED95600BFFFFC /* AddressViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

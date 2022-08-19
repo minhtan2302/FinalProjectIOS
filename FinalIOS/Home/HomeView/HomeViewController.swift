@@ -9,8 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    var productData: [ProductData] = ProductData.getData()
     var bannerData: [BannerData] = BannerData.getData()
+    var productData: [ProductData] = ApiService.getNewArrivals()
     
     @IBOutlet weak var menuButton: UIImageView!
     @IBOutlet weak var avatarUser: UIImageView!
@@ -72,8 +72,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         if collectionView == productCollection {
             let cellProduct = productCollection.dequeueReusableCell(withReuseIdentifier: "cellProduct", for: indexPath) as! ProductCollectionViewCell
             let item: ProductData = productData[indexPath.row]
-            
-            cellProduct.updateData(data: ProductCollectionViewCellViewData.init(image: item.imageProduct, name: item.titleProduct, type: item.subTitle, price: item.priceProduct))
+            let viewData = ProductCollectionViewCellViewData.init(id:item.id,image: item.imageProduct, name: item.titleProduct, type: item.subTitle, price: item.priceProduct)
+            cellProduct.updateData(data: viewData)
             
             return cellProduct
         } else {
@@ -86,9 +86,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == productCollection {
-            let item = productData[indexPath.row]
+            let item: ProductData = productData[indexPath.row]
             let vc = DetaiProductViewController()
-            vc.viewData = item.mapToDetaiProductViewData()
+            vc.viewData = item
             self.navigationController?.pushViewController(vc, animated: true)
         }
         
@@ -106,7 +106,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: 172, height: 240)
         }else {
             return CGSize(width: 260 , height: 160)
-
         }
     }
 }

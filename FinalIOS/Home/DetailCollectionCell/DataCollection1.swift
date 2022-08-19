@@ -17,7 +17,7 @@ extension DataCollection {
     static func getData() -> [DataCollection] {
         var datas: [DataCollection] = []
         for i in 1...3 {
-            let data = DataCollection(image: "img1")
+            let data = DataCollection(image: "")
             datas.append(data)
         }
         return datas

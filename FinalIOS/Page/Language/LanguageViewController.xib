@@ -10,8 +10,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LanguageViewController" customModule="FinalIOS" customModuleProvider="target">
             <connections>
                 <outlet property="buttonBack" destination="qRx-yO-nZW" id="tWP-8w-fWn"/>
+                <outlet property="logoutButton" destination="S5L-uW-NsI" id="TjU-Nq-8Az"/>
                 <outlet property="searchView" destination="3ah-IG-zj8" id="tEr-Zn-f9N"/>
-                <outlet property="tableLanguage" destination="HAR-Ff-eZK" id="f1D-lV-MNe"/>
+                <outlet property="tableLanguage" destination="HAR-Ff-eZK" id="W9M-wp-QPU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,22 +22,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRx-yO-nZW">
-                    <rect key="frame" x="25" y="74" width="50" height="50"/>
+                    <rect key="frame" x="25" y="74" width="40" height="40"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bW-Lc-Plz">
-                            <rect key="frame" x="10" y="10" width="30" height="30"/>
+                            <rect key="frame" x="5" y="5" width="30" height="30"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="left-w"/>
+                            <connections>
+                                <action selector="backButton:" destination="-1" eventType="touchUpInside" id="J3e-kj-ZP9"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="qRx-yO-nZW" secondAttribute="height" multiplier="1:1" id="54B-r0-3e3"/>
-                        <constraint firstAttribute="width" constant="50" id="8lS-JF-v0V"/>
-                        <constraint firstItem="2bW-Lc-Plz" firstAttribute="top" secondItem="qRx-yO-nZW" secondAttribute="top" constant="10" id="97v-gh-3VW"/>
-                        <constraint firstItem="2bW-Lc-Plz" firstAttribute="leading" secondItem="qRx-yO-nZW" secondAttribute="leading" constant="10" id="HiK-nV-E22"/>
-                        <constraint firstAttribute="trailing" secondItem="2bW-Lc-Plz" secondAttribute="trailing" constant="10" id="RzM-SF-fve"/>
-                        <constraint firstAttribute="bottom" secondItem="2bW-Lc-Plz" secondAttribute="bottom" constant="10" id="hzd-Ff-FDw"/>
+                        <constraint firstAttribute="width" constant="40" id="8lS-JF-v0V"/>
+                        <constraint firstItem="2bW-Lc-Plz" firstAttribute="top" secondItem="qRx-yO-nZW" secondAttribute="top" constant="5" id="97v-gh-3VW"/>
+                        <constraint firstItem="2bW-Lc-Plz" firstAttribute="leading" secondItem="qRx-yO-nZW" secondAttribute="leading" constant="5" id="HiK-nV-E22"/>
+                        <constraint firstAttribute="trailing" secondItem="2bW-Lc-Plz" secondAttribute="trailing" constant="5" id="RzM-SF-fve"/>
+                        <constraint firstAttribute="bottom" secondItem="2bW-Lc-Plz" secondAttribute="bottom" constant="5" id="hzd-Ff-FDw"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ah-IG-zj8">
@@ -78,6 +82,21 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5L-uW-NsI">
+                    <rect key="frame" x="100" y="772" width="214" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="jC0-C6-b51"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Logout">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="logoutButton:" destination="-1" eventType="touchUpInside" id="pHU-sl-gme"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -85,8 +104,11 @@
                 <constraint firstItem="qRx-yO-nZW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="1e5-iE-T4f"/>
                 <constraint firstItem="HAR-Ff-eZK" firstAttribute="top" secondItem="3ah-IG-zj8" secondAttribute="bottom" constant="30" id="8jR-zk-C2Q"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3ah-IG-zj8" secondAttribute="trailing" constant="25" id="ABr-Xn-dgV"/>
+                <constraint firstItem="S5L-uW-NsI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="APc-wC-1CS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HAR-Ff-eZK" secondAttribute="trailing" constant="25" id="KHS-nK-ETj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S5L-uW-NsI" secondAttribute="trailing" constant="100" id="N0d-Tn-hSr"/>
                 <constraint firstItem="3ah-IG-zj8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="120" id="Oj0-lS-sfm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="S5L-uW-NsI" secondAttribute="bottom" constant="40" id="awW-iv-uLn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HAR-Ff-eZK" secondAttribute="bottom" constant="200" id="blh-Bj-7A6"/>
                 <constraint firstItem="3ah-IG-zj8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="fBD-hv-ZSH"/>
                 <constraint firstItem="qRx-yO-nZW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="iYS-iT-ZH0"/>

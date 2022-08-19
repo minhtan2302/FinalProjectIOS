@@ -1,0 +1,144 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Cactus Jack Dior",
+            "rating": 320,
+            "description": "The oversized T-shirt is from the exclusive collaboration with CACTUS JACK. Crafted in white slub cotton jersey, it features a brown CACTUS JACK DIOR print on the chest.",
+            "price": 990.5,
+            "type":"White Slub cotton jersey",
+            "images": "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/cover_image_1/870x580/17f82f742ffe127f42dca9de82fb58b1/r/Y/1657194313_283J632A0752_C081_E01_ZHC.jpg?imwidth=870",
+            "imagePaths": [
+                "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/cover_image_1/870x580/17f82f742ffe127f42dca9de82fb58b1/r/Y/1657194313_283J632A0752_C081_E01_ZHC.jpg?imwidth=870",
+                "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/zoom_image_12/3000x2000/17f82f742ffe127f42dca9de82fb58b1/Z/H/1657631656_283J632A0752_C081_E12_ZH.jpg",
+                "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/zoom_image_14/3000x2000/17f82f742ffe127f42dca9de82fb58b1/Z/H/1657631656_283J632A0752_C081_E14_ZH.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Cactus KIC Dior",
+            "rating": 320,
+            "description": "The oversized T-shirt is from the exclusive collaboration with CACTUS JACK. Crafted in compact white cotton jersey, it boasts a CACTUS JACK DIOR embroidery on the chest.",
+            "price": 999.5,
+            "type":"White Cotton Jersey",
+            "images": "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/zoom_image_1/3000x2000/17f82f742ffe127f42dca9de82fb58b1/l/j/1656607645_283J685B0554_C088_E01_ZH.jpg",
+            "imagePaths": [
+                "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/zoom_image_1/3000x2000/17f82f742ffe127f42dca9de82fb58b1/l/j/1656607645_283J685B0554_C088_E01_ZH.jpg",
+                "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/zoom_image_9/3000x2000/17f82f742ffe127f42dca9de82fb58b1/l/j/1656607646_283J685B0554_C088_E09_ZH.jpg",
+                "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/zoom_image_8/3000x2000/17f82f742ffe127f42dca9de82fb58b1/l/j/1656607646_283J685B0554_C088_E08_ZH.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Cactus Dior Polo",
+            "rating": 320,
+            "description": "Crafted in beige and black cotton and silk, the design revisits the hallmark Dior Oblique motif with a CACTUS JACK DIOR Oblique jacquard.",
+            "price": 1899.5,
+            "type":"Cotton Jacquard and Silk",
+            "images": "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/zoom_image_1/3000x2000/17f82f742ffe127f42dca9de82fb58b1/G/l/1656607660_283M830AT355_C189_E01_ZH.jpg",
+            "imagePaths": [
+                "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/zoom_image_1/3000x2000/17f82f742ffe127f42dca9de82fb58b1/G/l/1656607660_283M830AT355_C189_E01_ZH.jpg",
+                "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/zoom_image_11/3000x2000/17f82f742ffe127f42dca9de82fb58b1/Z/K/1657631659_283M830AT355_C189_E11_ZH.jpg",
+                "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/zoom_image_12/3000x2000/17f82f742ffe127f42dca9de82fb58b1/Z/K/1657631659_283M830AT355_C189_E12_ZH.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Relaxed-Fit Polo",
+            "rating": 320,
+            "description": "Dior Ribbon on the front and a '47' on the back.Featuring a relaxed fit,the polo shirt will pair easily with any favorite jeans or Bermuda shorts.",
+            "price": 1499.0,
+            "type":"Black Cotton Pique",
+            "images": "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/zoom_image_1/3000x2000/17f82f742ffe127f42dca9de82fb58b1/n/e/1650394933_293J831A0455_C980_E01_ZH.jpg",
+            "imagePaths": [
+                "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/zoom_image_1/3000x2000/17f82f742ffe127f42dca9de82fb58b1/n/e/1650394933_293J831A0455_C980_E01_ZH.jpg",
+                "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/zoom_image_11/3000x2000/17f82f742ffe127f42dca9de82fb58b1/D/U/1651859124_293J831A0455_C980_E11_ZH.jpg",
+                "https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/zoom_image_13/3000x2000/17f82f742ffe127f42dca9de82fb58b1/D/U/1651859124_293J831A0455_C980_E13_ZH.jpg"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Breasted Wool Jacket",
+            "rating": 320,
+            "description": "Prada imagines a minimalist synthesis of formal menswear and reinterprets sartorial archetypes through structured modernism.",
+            "price": 3230.0,
+            "type":"Skinny Fit",
+            "images": "https://www.prada.com/content/dam/pradabkg_products/U/UGN/UGN194/11GYF0002/UGN194_11GY_F0002_S_222_SLF.jpg/jcr:content/renditions/cq5dam.web.hebebed.1500.1500.crop.jpg",
+            "imagePaths": [
+                "https://www.prada.com/content/dam/pradabkg_products/U/UGN/UGN194/11GYF0002/UGN194_11GY_F0002_S_222_SLF.jpg/jcr:content/renditions/cq5dam.web.hebebed.1500.1500.crop.jpg",
+                "https://www.prada.com/content/dam/pradabkg_products/U/UGN/UGN194/11GYF0002/UGN194_11GY_F0002_S_222_MDF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.500.500.jpg",
+                "https://www.prada.com/content/dam/pradabkg_products/U/UGN/UGN194/11GYF0002/UGN194_11GY_F0002_S_222_MDDA.jpg/_jcr_content/renditions/cq5dam.web.hebebed.500.500.jpg"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Printed Silk Shirt",
+            "rating": 320,
+            "description": "Prada reimagines its iconic pajama-style garments with new details. Simple lines like those of the collar emphasize the sleek aesthetic of this shirt.",
+            "price": 2450.0,
+            "type":"Straight Fit",
+            "images": "https://www.prada.com/content/dam/pradabkg_products/S/SC6/SC627/11LXF0035/SC627_11LX_F0035_S_222_SLF.jpg/jcr:content/renditions/cq5dam.web.hebebed.1500.1500.crop.jpg",
+            "imagePaths": [
+                "https://www.prada.com/content/dam/pradabkg_products/S/SC6/SC627/11LXF0035/SC627_11LX_F0035_S_222_SLF.jpg/jcr:content/renditions/cq5dam.web.hebebed.1500.1500.crop.jpg",
+                "https://www.prada.com/content/dam/pradabkg_products/S/SC6/SC627/11LXF0035/SC627_11LX_F0035_S_222_MDF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.500.500.jpg",
+                "https://www.prada.com/content/dam/pradabkg_products/S/SC6/SC627/11LXF0035/SC627_11LX_F0035_S_222_MDB.jpg/_jcr_content/renditions/cq5dam.web.hebebed.500.500.jpg"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Turtleneck Sweater",
+            "rating": 320,
+            "description": "This cotton turtleneck sweater is part of a selection of garments presented during the FW22 fashion show, inspired by decorative elements from science fiction films.",
+            "price": 1850.0,
+            "type":"Slim Fit",
+            "images": "https://www.prada.com/content/dam/pradanux_products/U/UMR/UMR527/11ISF0BN9/UMR527_11IS_F0BN9_S_222_SLF.png/jcr:content/renditions/cq5dam.web.hebebed.1500.1500.square.jpg",
+            "imagePaths": [
+                "https://www.prada.com/content/dam/pradanux_products/U/UMR/UMR527/11ISF0BN9/UMR527_11IS_F0BN9_S_222_SLF.png/jcr:content/renditions/cq5dam.web.hebebed.1500.1500.square.jpg",
+                "https://www.prada.com/content/dam/pradanux_products/U/UMR/UMR527/11ISF0BN9/UMR527_11IS_F0BN9_S_222_MDD.png/_jcr_content/renditions/cq5dam.web.hebebed.500.500.jpg",
+                "https://www.prada.com/content/dam/pradanux_products/U/UMR/UMR527/11ISF0BN9/UMR527_11IS_F0BN9_S_222_MDF.png/_jcr_content/renditions/cq5dam.web.hebebed.500.500.jpg"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Gucci Lovelight",
+            "rating": 320,
+            "description": "The House presents a whimsical collection of ready-to-wear, shoes and accessories in a colorful palette. As a joyful reinterpretation of Gucci’s heritage.",
+            "price": 2550.0,
+            "type":"Long Sleeves",
+            "images": "https://media.gucci.com/style/HEXEAF2DC_Center_0_0_2400x2400/1658340029/706921_XJERY_4330_001_100_0000_Light-Gucci-Lovelight-cotton-jersey-sweater.jpg",
+            "imagePaths": [
+                "https://media.gucci.com/style/HEXEAF2DC_Center_0_0_2400x2400/1658340029/706921_XJERY_4330_001_100_0000_Light-Gucci-Lovelight-cotton-jersey-sweater.jpg",
+                "https://media.gucci.com/style/HEXEAF2DC_Center_0_0_2400x2400/1657549874/706921_XJERY_4330_002_100_0000_Light-Gucci-Lovelight-cotton-jersey-sweater.jpg",
+                "https://media.gucci.com/style/HEXEAF2DC_Center_0_0_2400x2400/1657549877/706921_XJERY_4330_003_100_0000_Light-Gucci-Lovelight-cotton-jersey-sweater.jpg"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Geomatric Neoprene",
+            "rating": 320,
+            "description": "Instantly recognizable emblems of the brand, logos enrich designs in new and unexpected ways.",
+            "price": 2705.0,
+            "type":"Long Sleeves",
+            "images": "https://media.gucci.com/style/HEXC4D6E2_Center_0_0_2400x2400/1655828136/705801_XKCIY_7528_001_100_0000_Light-Geometric-cotton-jacquard-sweater.jpg",
+            "imagePaths": [
+                "https://media.gucci.com/style/HEXC4D6E2_Center_0_0_2400x2400/1655828136/705801_XKCIY_7528_001_100_0000_Light-Geometric-cotton-jacquard-sweater.jpg",
+                "https://media.gucci.com/style/HEXC4D6E2_Center_0_0_2400x2400/1655828139/705801_XKCIY_7528_002_100_0000_Light-Geometric-cotton-jacquard-sweater.jpg",
+                "https://media.gucci.com/style/HEXC4D6E2_Center_0_0_2400x2400/1655828140/705801_XKCIY_7528_003_100_0000_Light-Geometric-cotton-jacquard-sweater.jpg"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "GG Wool Jacquard",
+            "rating": 320,
+            "description": "Inspired by the original Gucci rhombi pattern, the GG motif decorates this blue wool sweater..",
+            "price": 1650.0,
+            "type":"Long Sleeves",
+            "images": "https://media.gucci.com/style/HEXEAF2DC_Center_0_0_2400x2400/1654015542/692900_XKCC5_4492_001_100_0000_Light-GG-wool-jacquard-sweater.jpg",
+            "imagePaths": [
+                "https://media.gucci.com/style/HEXEAF2DC_Center_0_0_2400x2400/1654015542/692900_XKCC5_4492_001_100_0000_Light-GG-wool-jacquard-sweater.jpg",
+                "https://media.gucci.com/style/HEXEAF2DC_Center_0_0_2400x2400/1654015544/692900_XKCC5_4492_002_100_0000_Light-GG-wool-jacquard-sweater.jpg",
+                "https://media.gucci.com/style/HEXEAF2DC_Center_0_0_2400x2400/1654015545/692900_XKCC5_4492_003_100_0000_Light-GG-wool-jacquard-sweater.jpg"
+            ]
+        }
+    ]
+}

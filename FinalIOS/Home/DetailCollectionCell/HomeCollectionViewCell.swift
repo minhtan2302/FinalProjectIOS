@@ -17,7 +17,8 @@ class HomeCollectionViewCell: UICollectionViewCell {
     }
     
     func setImage(name: String) {
-        imageView.image = UIImage(named: name)
+        imageView.downloaded(from: name, completion: nil)
+//        imageView.image = UIImage(named: name)
     }
 
 }

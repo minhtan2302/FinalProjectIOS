@@ -86,6 +86,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="minusButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pl2-Pz-Web"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cq-EP-Wbr">
                                         <rect key="frame" x="30" y="5" width="10" height="20"/>
@@ -113,6 +116,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="plusButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cI6-8J-TaB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -158,6 +164,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="amountProduct" destination="8cq-EP-Wbr" id="L6h-kc-D4S"/>
                 <outlet property="cellCartView" destination="m3f-aX-ovx" id="dnb-hT-CTz"/>
                 <outlet property="imageProduct" destination="17F-Rl-iRM" id="2W6-gc-R6y"/>
                 <outlet property="nameProduct" destination="YKH-GO-CMW" id="zHD-w6-1jM"/>
