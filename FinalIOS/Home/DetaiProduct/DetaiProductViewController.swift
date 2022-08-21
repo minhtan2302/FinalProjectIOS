@@ -170,7 +170,7 @@ class DetaiProductViewController: UIViewController {
             let object: FavoriteItem? = favoriteItemManager.productFavorite.first { subItem in
                 subItem.productFavorite.id == viewData?.id
             }
-            if let object = object {
+            if let objectFavorite = object {
                 favoriteButtonView.backgroundColor = UIColor.red
                 favoriteButton.backgroundColor = UIColor.red
             }else {
