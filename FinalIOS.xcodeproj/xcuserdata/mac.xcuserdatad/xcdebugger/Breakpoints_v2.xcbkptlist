@@ -7,32 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EA2EF3E8-CBF8-4C42-8C70-48FE1E803E25"
+            uuid = "7A213790-0EED-40BC-AB1D-65C774F63F94"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FinalIOS/Home/HomeView/HomeViewController.swift"
+            filePath = "FinalIOS/Home/DetaiProduct/DetaiProductViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "scrollViewDidScroll(_:)"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5EDD961A-E02A-4E86-B50D-15B761EC7F2D"
+            uuid = "ED31F54D-4E19-4E1A-93C6-3E619898BFFA"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FinalIOS/Home/HomeView/HomeViewController.swift"
+            filePath = "FinalIOS/Home/DetaiProduct/DetaiProductViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "collectionView(_:cellForItemAt:)"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

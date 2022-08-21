@@ -7,6 +7,11 @@
 
 import UIKit
 
+// Global access
+let cardItemManager = CardItemsManager()
+let orderItemManager = OrderTransactionManager()
+let favoriteItemManager = ProductFavoriteManager()
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

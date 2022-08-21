@@ -17,6 +17,7 @@ class SuccessPayViewController: UIViewController {
                      _ = self.navigationController?.popToViewController(vc as! HomeViewController, animated: true)
                    }
                 }
+//        cardItemManager.deleteItem()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
