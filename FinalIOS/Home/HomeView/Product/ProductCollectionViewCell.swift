@@ -46,30 +46,15 @@ class ProductCollectionViewCell: UICollectionViewCell {
         
     }
     
-    // Can update image, name, type, price
-    // Cach viet sai
-//    func updateData(image: String, name: String, type: String, price: Double) {
-//        
-//    }
-    
     // Cach viet dung
     func updateData(data: ProductCollectionViewCellViewData?) {
         imageProduct.downloaded(from: data!.image, completion: nil)
-//        imageProduct.image = UIImage(named: data!.image ?? "")
         titleLabel.text = data?.name
         subTitleLabel.text = data?.type
         priceLabel.text = "$\(data?.price ?? 0)"
     }
 }
 
-func testing() {
     // DU lieu tu server
 //    let aothunDTO = ProductDTO(imageUrl: "", name: "Ao thun", branch: "VietNam", price: 50.0)
 
-    let cell = ProductCollectionViewCell()
-    // Dung. Nhung k nen lam
-//    cell.updateData(image: aothunDTO.imageUrl, name: aothunDTO.name, type: aothunDTO.branch, price: aothunDTO.price)
-
-//    cell.updateData(data: aothunDTO.mapToProductCollectionViewCellViewData())
-//    cell.updateData(data: ProductCollectionViewCellViewData(image: "", name: "", type: "", price: 20.0))
-}

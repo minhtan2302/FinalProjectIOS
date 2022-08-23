@@ -79,7 +79,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         } else {
             let cellBanner = bannerCollection.dequeueReusableCell(withReuseIdentifier: "cellBanner", for: indexPath) as! BannerCollectionViewCell
             let item = bannerData[indexPath.row]
-            cellBanner.updateDataBanner(data: BannerCollectionViewCellViewData.init(image: item.imageBanner, title: item.titleBanner, discount: item.discountBanner, code: item.codeBanner))
+            let bannerData = BannerCollectionViewCellViewData.init(image: item.imageBanner, title: item.titleBanner, discount: item.discountBanner, code: item.codeBanner)
+            cellBanner.updateDataBanner(data: bannerData)
             
             return cellBanner
         }

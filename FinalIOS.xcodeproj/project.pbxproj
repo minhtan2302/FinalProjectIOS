@@ -225,10 +225,10 @@
 		042F12E6288716F100B11E30 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				04F93938288AF66C00688A7D /* Pay */,
-				04ECA4C628894A1E00461143 /* DataHome */,
 				04ECA4B728890A7A00461143 /* HomeView */,
 				042F12FE2887C45D00B11E30 /* DetaiProduct */,
+				04F93938288AF66C00688A7D /* Pay */,
+				04ECA4C628894A1E00461143 /* DataHome */,
 				042F12EB28871AA100B11E30 /* DetailCollectionCell */,
 			);
 			path = Home;
@@ -474,8 +474,8 @@
 			isa = PBXGroup;
 			children = (
 				04ECA4C728894A3A00461143 /* DataProduct.swift */,
-				041F32FB28A2C0780089422A /* CardItemsManager.swift */,
 				04E3BA9128899F8600CD2D38 /* DataBanner.swift */,
+				041F32FB28A2C0780089422A /* CardItemsManager.swift */,
 			);
 			path = DataHome;
 			sourceTree = "<group>";

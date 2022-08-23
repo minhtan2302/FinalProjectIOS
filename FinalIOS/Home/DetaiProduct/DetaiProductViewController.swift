@@ -22,7 +22,7 @@ class DetaiProductViewController: UIViewController {
         //            newValue
         //        }
         didSet {
-//            print("DEBUG LOG: did set ViewData")
+            //            print("DEBUG LOG: did set ViewData")
             updateView()
         }
     }
@@ -72,7 +72,7 @@ class DetaiProductViewController: UIViewController {
             let itemProduct: CardItem = CardItem(product: viewData, amout:  count)
             cardItemManager.addItem(item: itemProduct)
         }
-
+        
         let vc = CartViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
@@ -161,22 +161,23 @@ class DetaiProductViewController: UIViewController {
         
         updateView()
         
+//        ApiService.getNewArrivals()
+        
     }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.isHidden = true
         
-            let object: FavoriteItem? = favoriteItemManager.productFavorite.first { subItem in
-                subItem.productFavorite.id == viewData?.id
-            }
-            if let objectFavorite = object {
-                favoriteButtonView.backgroundColor = UIColor.red
-                favoriteButton.backgroundColor = UIColor.red
-            }else {
-                favoriteButtonView.backgroundColor = UIColor.white
-                favoriteButton.backgroundColor = UIColor.white
-            }
+        let object: FavoriteItem? = favoriteItemManager.productFavorite.first { subItem in
+            subItem.productFavorite.id == viewData?.id
+        }
+        if let objectFavorite = object {
+            favoriteButtonView.backgroundColor = UIColor.red
+            favoriteButton.backgroundColor = UIColor.red
+        }else {
+            favoriteButtonView.backgroundColor = UIColor.white
+            favoriteButton.backgroundColor = UIColor.white
+        }
         
     }
     
@@ -208,6 +209,7 @@ extension DetaiProductViewController: UICollectionViewDelegate, UICollectionView
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
+        print("content: \(scrollView.contentOffset.x)")
         pageControl.currentPage = Int(pageIndex)
     }
 }

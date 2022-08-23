@@ -16,7 +16,6 @@ import Foundation
     var description: String
     var rating: Int
     var priceProduct: Double
-//     var amount: Int
     
     init(
         id: Int,
@@ -36,7 +35,6 @@ import Foundation
         self.description = description
         self.priceProduct = priceProduct
         self.rating = rating
-//        self.amount = amount
     }
     
     func mapToProductCollectionViewCellViewData() -> ProductCollectionViewCellViewData {

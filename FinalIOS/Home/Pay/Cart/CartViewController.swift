@@ -43,7 +43,12 @@ class CartViewController: UIViewController {
         proceedView.layer.cornerRadius = 10
         proceedView.clipsToBounds = true
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableCart.reloadData()
         totalLabel.text = "$\(cardItemManager.calculateTotalPrice())"
+
     }
     
 }
