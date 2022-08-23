@@ -11,7 +11,6 @@ class CardItemsManager {
     // Properties
     private var cartItems: [CardItem] = []
     
-    
     // Init
     init() {}
         
@@ -101,7 +100,8 @@ class ProductFavoriteManager{
             subItem.productFavorite.id == item.productFavorite.id
         }
         if let objectNotNull = object {
-            print("Da ton tai")
+//            productFavorite.remove(at: item.productFavorite.id)
+            print("Da Ton Tai")
         }else {
             productFavorite.append(item)
         }

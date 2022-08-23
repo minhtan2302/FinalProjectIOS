@@ -23,6 +23,7 @@ class AddressViewController: UIViewController {
         let vc = SuccessPayViewController()
         self.navigationController?.pushViewController(vc, animated: true)
         
+        orderItemManager.addHistory()
         cardItemManager.removeData()
         
     }
@@ -49,8 +50,7 @@ class AddressViewController: UIViewController {
         
         totalProduct.text = "$\(cardItemManager.calculateTotalPrice())"
         
-        orderItemManager.addHistory()
-        cardItemManager.getList()
+//        cardItemManager.getList()
     }
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = true

@@ -11,6 +11,7 @@ final class BannerData {
     var titleBanner: String
     var discountBanner : String
     var codeBanner: String
+    
     init(imageBanner: String, titleBanner: String, discountBanner: String, codeBanner: String) {
         self.imageBanner = imageBanner
         self.titleBanner = titleBanner
@@ -22,7 +23,7 @@ final class BannerData {
     }
 }
 let imageBN: [String] = ["dior","prdd","gucci"]
-    
+
 extension BannerData {
     static func getData() -> [BannerData] {
         var datas: [BannerData] = []
