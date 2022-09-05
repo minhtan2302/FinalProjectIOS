@@ -168,7 +168,7 @@ class DetaiProductViewController: UIViewController {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.isHidden = true
         
-        let object: FavoriteItem? = favoriteItemManager.productFavorite.first { subItem in
+        let object: FavoriteItem? = favoriteItemManager.listFavorite().first { subItem in
             subItem.productFavorite.id == viewData?.id
         }
         if let objectFavorite = object {

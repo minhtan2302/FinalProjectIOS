@@ -75,38 +75,57 @@ class CardItemsManager {
     }
 }
 
+struct UserDefaultKeysOrder {
+    static let ORDER_LIST = "ORDER_LIST"
+}
+
 class OrderTransactionManager {
-    
-    var historyOrder: [OrderTransaction] = []
-    
+        
     func addHistory() {
+        
+        var historyOrder: [OrderTransaction] = UserDefaultAccessor.shared.getObjects(type: OrderTransaction.self, key: UserDefaultKeysOrder.ORDER_LIST)
+        
         let itemCart: [CardItem] = cardItemManager.getList()
         let total = cardItemManager.calculateTotalPrice()
         let item: OrderTransaction = OrderTransaction(cartItems: itemCart,totalItems: total, paymentDate: Date.now)
+        
         historyOrder.append(item)
+        UserDefaultAccessor.shared.saveObject(historyOrder, forKey: UserDefaultKeysOrder.ORDER_LIST)
     }
     
     func listOrder() -> [OrderTransaction] {
-        return historyOrder
+        let order: [OrderTransaction] = UserDefaultAccessor.shared.getObjects(type: OrderTransaction.self, key: UserDefaultKeysOrder.ORDER_LIST)
+        return order
     }
     
 }
 
-class ProductFavoriteManager{
-    var productFavorite: [FavoriteItem] = []
+struct UserDefaultKeysFavorite {
+    static let FAVORITE_LIST = "FAVORITE_LIST"
+}
+
+class ProductFavoriteManager {
     
     func addFavorite(item: FavoriteItem) {
-        let object: FavoriteItem? = productFavorite.first { subItem in
+        // Lay danh sach favorite hien tai
+        var favorites: [FavoriteItem] = UserDefaultAccessor.shared.getObjects(type: FavoriteItem.self, key: UserDefaultKeysFavorite.FAVORITE_LIST)
+        // Tim xem item.id đã được thêm vào chưa
+        
+        let index: Int? = favorites.firstIndex { subItem in
             subItem.productFavorite.id == item.productFavorite.id
         }
-        if let objectNotNull = object {
-//            productFavorite.remove(at: item.productFavorite.id)
+
+        if let indexNotNull = index {
             print("Da Ton Tai")
-        }else {
-            productFavorite.append(item)
+            favorites.remove(at: indexNotNull)
+        } else {
+            favorites.append(item)
         }
+        UserDefaultAccessor.shared.saveObjects(favorites, forKey: UserDefaultKeysFavorite.FAVORITE_LIST)
     }
+    
     func listFavorite() -> [FavoriteItem] {
-        return productFavorite
+        let favorites: [FavoriteItem] = UserDefaultAccessor.shared.getObjects(type: FavoriteItem.self, key: UserDefaultKeysFavorite.FAVORITE_LIST)
+        return favorites
     }
 }

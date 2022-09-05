@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OrderTransaction {
+class OrderTransaction: Codable {
     var cartItems: [CardItem] = []
     var totalItems: Double = Double()
     var paymentDate: Date = Date()

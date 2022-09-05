@@ -16,6 +16,7 @@
 		041F32FC28A2C0780089422A /* CardItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F32FB28A2C0780089422A /* CardItemsManager.swift */; };
 		041F330428A368C50089422A /* DeliveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F330228A368C50089422A /* DeliveryTableViewCell.swift */; };
 		041F330528A368C50089422A /* DeliveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041F330328A368C50089422A /* DeliveryTableViewCell.xib */; };
+		04203C1028BCF5E700624CC0 /* UserDefaultAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04203C0F28BCF5E700624CC0 /* UserDefaultAccessor.swift */; };
 		042F12D3288715CC00B11E30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F12D2288715CC00B11E30 /* AppDelegate.swift */; };
 		042F12DC288715CE00B11E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042F12DB288715CE00B11E30 /* Assets.xcassets */; };
 		042F12DF288715CE00B11E30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042F12DD288715CE00B11E30 /* LaunchScreen.storyboard */; };
@@ -82,6 +83,7 @@
 		041F32FB28A2C0780089422A /* CardItemsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemsManager.swift; sourceTree = "<group>"; };
 		041F330228A368C50089422A /* DeliveryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTableViewCell.swift; sourceTree = "<group>"; };
 		041F330328A368C50089422A /* DeliveryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryTableViewCell.xib; sourceTree = "<group>"; };
+		04203C0F28BCF5E700624CC0 /* UserDefaultAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultAccessor.swift; sourceTree = "<group>"; };
 		042F12CF288715CC00B11E30 /* FinalIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042F12D2288715CC00B11E30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		042F12DB288715CE00B11E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				042F12DD288715CE00B11E30 /* LaunchScreen.storyboard */,
 				042F12E0288715CE00B11E30 /* Info.plist */,
 				04CC2D6A289AB01700477365 /* UIImageView+Ext.swift */,
+				04203C0F28BCF5E700624CC0 /* UserDefaultAccessor.swift */,
 			);
 			path = FinalIOS;
 			sourceTree = "<group>";
@@ -641,6 +644,7 @@
 				04084E9428AB3E5400FB2D84 /* HistoryTableViewCell.swift in Sources */,
 				041F32FC28A2C0780089422A /* CardItemsManager.swift in Sources */,
 				04A2C6D4288ED95600BFFFFC /* AddressViewController.swift in Sources */,
+				04203C1028BCF5E700624CC0 /* UserDefaultAccessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

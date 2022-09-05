@@ -7,7 +7,7 @@
 
 import Foundation
 // Dummy Server Response DTO
- struct ProductData {
+struct ProductData: Codable {
     var id: Int
     var imagePath : [String]
     var imageProduct: String
@@ -16,6 +16,29 @@ import Foundation
     var description: String
     var rating: Int
     var priceProduct: Double
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case imagePath = "imagePaths"
+        case imageProduct = "images"
+        case titleProduct = "name"
+        case subTitle = "type"
+        case description = "description"
+        case rating = "rating"
+        case priceProduct = "price"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(Int.self, forKey: .id)
+        imagePath = try container.decode([String].self, forKey: .imagePath)
+        imageProduct = try container.decode(String.self, forKey: .imageProduct)
+        titleProduct = try container.decode(String.self, forKey: .titleProduct)
+        subTitle = try container.decode(String.self, forKey: .subTitle)
+        description = try container.decode(String.self, forKey: .description)
+        rating = try container.decode(Int.self, forKey: .rating)
+        priceProduct = try container.decode(Double.self, forKey: .priceProduct)
+    }
     
     init(
         id: Int,
@@ -36,6 +59,8 @@ import Foundation
         self.priceProduct = priceProduct
         self.rating = rating
     }
+    
+
     
     func mapToProductCollectionViewCellViewData() -> ProductCollectionViewCellViewData {
         ProductCollectionViewCellViewData(id: id, image: imageProduct, name: titleProduct, type: subTitle, price: priceProduct)

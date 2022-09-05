@@ -10,7 +10,8 @@ import UIKit
 class HomeViewController: UIViewController {
 
     var bannerData: [BannerData] = BannerData.getData()
-    var productData: [ProductData] = ApiService.getNewArrivals()
+//    var productData: [ProductData] = ApiService.getNewArrivals()
+    var productData: [ProductData] = ApiService.getNewArrivalsWithDecodable()
     
     @IBOutlet weak var menuButton: UIImageView!
     @IBOutlet weak var avatarUser: UIImageView!

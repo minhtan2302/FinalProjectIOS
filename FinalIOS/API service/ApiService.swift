@@ -63,4 +63,47 @@ class ApiService {
         }
         return []
     }
+    
+    
+    static func getNewArrivalsWithDecodable() -> [ProductData] {
+        // 1. Doc file
+        if let path = Bundle.main.path(forResource: "arrivals", ofType: "json") {
+            do {
+                // 2. Doc file tu duong dan
+                let data: Data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+//                             print("[Debug] data \(data)")
+//                             print("[Debug] ========================")
+                // 3. Convert data => JSON
+                
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                
+                if let json = jsonResult as? JSON {
+                    //                                print("[Debug] jsonResult \(jsonResult)")
+                    //                                print("[Debug] json \(json)")
+                    //                                print("[Debug] ========================")
+                    if let dataArray = json["data"] as? JSONArray {
+                        //                                        print("[Debug] dataArray \(dataArray)")
+                        //                                        print("[Debug] ========================")
+                        
+                        var result: [ProductData] = []
+                        
+                        for i in 0..<dataArray.count {
+                            let objectJSON: JSON = dataArray[i]
+                            // Chuyen JSON thanh Data
+                            if let jsonData = try? JSONSerialization.data(withJSONObject: objectJSON, options: .prettyPrinted),
+                               let photoObject = try? JSONDecoder().decode(ProductData.self, from: jsonData) {
+                                result.append(photoObject)
+                            }
+                        }
+                        
+                        return result
+                    }
+                }
+                
+            } catch {
+                // handle error
+            }
+        }
+        return []
+    }
 }
