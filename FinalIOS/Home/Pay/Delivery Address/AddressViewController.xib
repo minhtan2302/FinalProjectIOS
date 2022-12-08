@@ -10,11 +10,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressViewController" customModule="FinalIOS" customModuleProvider="target">
             <connections>
                 <outlet property="addView" destination="Wl0-1Y-8CZ" id="4O0-qd-AJI"/>
+                <outlet property="addressLabel" destination="gH2-Eb-5r6" id="roG-Xx-A0I"/>
                 <outlet property="backButtonView" destination="ah3-VQ-Hkt" id="TAJ-u6-pWP"/>
                 <outlet property="footerView" destination="epW-8W-F4Q" id="28Z-Ja-Xse"/>
                 <outlet property="orderButton" destination="r4Y-Wy-4Wc" id="ySY-Ya-KsY"/>
+                <outlet property="phoneLabel" destination="uB9-6V-JLy" id="t9R-oY-pV6"/>
                 <outlet property="tabviewOrder" destination="4QJ-1l-bs3" id="Fub-Cv-xaH"/>
                 <outlet property="totalProduct" destination="Tb8-Fv-0wb" id="89q-fY-T6a"/>
+                <outlet property="usernameLabel" destination="oU1-Sv-1EO" id="6gW-JK-f1Q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -72,8 +75,8 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8 Khue My Dong 9, NHS, DN" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gH2-Eb-5r6">
-                            <rect key="frame" x="125" y="46.5" width="224" height="43"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8 Khue My Dong 9" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gH2-Eb-5r6">
+                            <rect key="frame" x="125" y="46.5" width="224" height="21.5"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -88,7 +91,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0901901459" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uB9-6V-JLy">
-                            <rect key="frame" x="125" y="99.5" width="224" height="21"/>
+                            <rect key="frame" x="125" y="98" width="224" height="21"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -97,7 +100,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="uB9-6V-JLy" firstAttribute="leading" secondItem="pLS-ZX-exr" secondAttribute="trailing" constant="10" id="4iV-fv-Jbn"/>
-                        <constraint firstItem="uB9-6V-JLy" firstAttribute="top" secondItem="gH2-Eb-5r6" secondAttribute="bottom" constant="10" id="BEo-GE-saC"/>
+                        <constraint firstItem="uB9-6V-JLy" firstAttribute="top" secondItem="gH2-Eb-5r6" secondAttribute="bottom" constant="30" id="BEo-GE-saC"/>
                         <constraint firstItem="nAv-xu-6Lc" firstAttribute="top" secondItem="Wl0-1Y-8CZ" secondAttribute="top" constant="20" id="BXp-Cc-yfV"/>
                         <constraint firstAttribute="height" constant="140" id="Clx-em-wVq"/>
                         <constraint firstAttribute="trailing" secondItem="gH2-Eb-5r6" secondAttribute="trailing" constant="15" id="DV3-ho-Cy2"/>

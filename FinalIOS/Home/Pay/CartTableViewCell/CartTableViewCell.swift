@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CardItem {
+class CardItem: Codable {
     var product: ProductData
     var amout: Int
     

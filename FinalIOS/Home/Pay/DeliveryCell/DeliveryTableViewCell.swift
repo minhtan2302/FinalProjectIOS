@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FavoriteItem {
+class FavoriteItem: Codable {
     var productFavorite: ProductData
     
     init (productFavorite: ProductData) {

@@ -15,6 +15,8 @@ class TutorialViewController: UIViewController {
     @IBOutlet weak var pageControl : UIPageControl!
     @IBOutlet weak var nextButtonView : UIView!
     @IBAction func nextToButton(_ sender: Any) {
+        let vc = WelcomeViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +29,7 @@ class TutorialViewController: UIViewController {
         let nib = UINib(nibName: "CustomTutorialCollectionViewCell", bundle: .main)
         tutorialCollection.register(nib, forCellWithReuseIdentifier: "cell")
         
-        pageControl.currentPage = 2
+        pageControl.currentPage = 0
         
         nextButtonView.layer.cornerRadius = nextButtonView.frame.width/2
         nextButtonView.clipsToBounds = true
@@ -50,7 +52,6 @@ extension TutorialViewController: UICollectionViewDelegate, UICollectionViewData
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         pageControl.currentPage = Int(pageIndex)
-        print("\(scrollView.contentOffset.x)")
     }
 }
 extension TutorialViewController: UICollectionViewDelegateFlowLayout {

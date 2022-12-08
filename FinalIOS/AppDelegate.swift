@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 // Global access
 let cardItemManager = CardItemsManager()
 let orderItemManager = OrderTransactionManager()
 let favoriteItemManager = ProductFavoriteManager()
+var userIsLoggin: RegisterInfo?
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,33 +20,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        IQKeyboardManager.shared.enable = true
+        
         window = UIWindow.init(frame: UIScreen.main.bounds)
         
-//        let navi = UINavigationController(rootViewController: WelcomeViewController())
-//        window?.rootViewController = navi
-        
-        let HomeVC = HomeViewController()
-        let HomeNavi = UINavigationController(rootViewController: HomeVC)
-        HomeVC.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "home"), tag: 0)
-        
-        let CartVC = CartViewController()
-        let CartNavi = UINavigationController(rootViewController: CartVC)
-        CartVC.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "carttb"), tag: 1)
-        
-        let HistoryVC = HistoryViewController()
-        let HistoryNavi = UINavigationController(rootViewController: HistoryVC)
-        HistoryVC.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "history"), tag: 2)
-        
-        let ProfileVC = ProfileViewController()
-        let ProfileNavi = UINavigationController(rootViewController: ProfileVC)
-        ProfileVC.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "user"), tag: 3)
-        
-        let tabbarController = UITabBarController()
-        tabbarController.viewControllers = [HomeNavi,CartNavi,HistoryNavi,ProfileNavi]
-        window?.rootViewController = tabbarController
-        
+        moveToTutorial()
         window?.makeKeyAndVisible()
         return true
     }
+    
+    func moveToTutorial() {
+        let navi = UINavigationController(rootViewController: TutorialViewController())
+        navi.navigationBar.isHidden = true
+        window?.rootViewController = navi
+    }
+    
+    func moveToLogin() {
+        let navi = UINavigationController(rootViewController: WelcomeViewController())
+        navi.navigationBar.isHidden = true
+        window?.rootViewController = navi
+    }
+    
+    func moveToHome() {
+        let navi = UINavigationController(rootViewController: BaseTabBarController())
+        navi.navigationBar.isHidden = true
+        window?.rootViewController = navi
+    }
+    
+   
 }
 

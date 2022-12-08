@@ -25,5 +25,9 @@ class SuccessPayViewController: UIViewController {
         continueView.layer.cornerRadius = 15
         continueView.clipsToBounds = true
     }
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+
+    }
 
 }

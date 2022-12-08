@@ -7,6 +7,12 @@
 
 import UIKit
 
+extension UIApplication {
+    static var appDelegate: AppDelegate? {
+        UIApplication.shared.delegate as? AppDelegate
+    }
+}
+
 class LanguageViewController: UIViewController {
 
     var datas: [DataLanguage] = DataLanguage.getData()
@@ -18,8 +24,12 @@ class LanguageViewController: UIViewController {
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
     @IBAction func logoutButton(_ sender: Any) {
+        // Move to login
+        UIApplication.appDelegate?.moveToLogin()
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

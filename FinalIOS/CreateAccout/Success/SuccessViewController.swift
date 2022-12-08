@@ -12,9 +12,9 @@ class SuccessViewController: UIViewController {
     @IBOutlet weak var startLoginButton: UIButton!
     
     @IBAction func startLogin(_ sender: Any) {
-        let vc = LoginViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        UIApplication.appDelegate?.moveToHome()
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

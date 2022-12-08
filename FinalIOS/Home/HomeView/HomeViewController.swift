@@ -10,21 +10,25 @@ import UIKit
 class HomeViewController: UIViewController {
 
     var bannerData: [BannerData] = BannerData.getData()
-    var productData: [ProductData] = ApiService.getNewArrivals()
+//    var productData: [ProductData] = ApiService.getNewArrivals()
+    var productData: [ProductData] = ApiService.getNewArrivalsWithDecodable()
     
     @IBOutlet weak var menuButton: UIImageView!
     @IBOutlet weak var avatarUser: UIImageView!
     @IBOutlet weak var searchBar: UIView!
     @IBOutlet weak var textSearch: UITextField!
-    @IBOutlet weak var switchButton: UIImageView!
     @IBOutlet weak var bannerCollection: UICollectionView!
     @IBOutlet weak var productCollection: UICollectionView!
     @IBOutlet weak var scrollViewHome: UIScrollView!
     
+    @IBAction func createButton(_ sender: Any) {
+        let vc = CreateProductViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.isNavigationBarHidden = true
+//        self.navigationController?.isNavigationBarHidden = true
         
         
         productCollection.delegate = self
@@ -52,8 +56,6 @@ class HomeViewController: UIViewController {
         avatarUser.layer.cornerRadius = avatarUser.frame.width / 2
         avatarUser.clipsToBounds = true
         
-        switchButton.layer.cornerRadius = switchButton.frame.width / 4
-        switchButton.clipsToBounds = true
         
     }
 }
@@ -96,6 +98,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
+        self.navigationController?.isNavigationBarHidden = true
+
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         view.endEditing(true)

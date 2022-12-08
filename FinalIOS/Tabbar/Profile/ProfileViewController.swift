@@ -11,6 +11,9 @@ class ProfileViewController: UIViewController {
     
     var datas: [DataProfile] = DataProfile.getData()
     
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    
     @IBOutlet weak var backButton: UIView!
     @IBOutlet weak var bannerProfile: UIView!
     @IBOutlet weak var profileView: UIView!
@@ -44,6 +47,9 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
 
         self.navigationController?.navigationBar.isHidden = true
+        
+        usernameLabel.text = userIsLoggin?.username
+        emailLabel.text = userIsLoggin?.email
         
         backButton.layer.cornerRadius = backButton.frame.width / 2
         backButton.clipsToBounds = true
