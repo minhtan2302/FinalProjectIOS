@@ -21,10 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="763"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aSV-r6-f05">
-                                <rect key="frame" x="5" y="20" width="404" height="520"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="520" id="psq-W3-ZpH"/>
-                                </constraints>
+                                <rect key="frame" x="5" y="20" width="404" height="569.5"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XpU-KJ-3IO" userLabel="viewdes">
                                 <rect key="frame" x="20" y="629.5" width="374" height="123.5"/>
@@ -75,6 +72,7 @@
                             <constraint firstItem="aSV-r6-f05" firstAttribute="leading" secondItem="hd6-zh-oxE" secondAttribute="leading" constant="5" id="9qb-MB-IqQ"/>
                             <constraint firstAttribute="trailing" secondItem="aSV-r6-f05" secondAttribute="trailing" constant="5" id="IsM-vd-SKr"/>
                             <constraint firstAttribute="trailing" secondItem="XpU-KJ-3IO" secondAttribute="trailing" constant="20" id="NQN-aq-F0M"/>
+                            <constraint firstItem="XpU-KJ-3IO" firstAttribute="top" secondItem="aSV-r6-f05" secondAttribute="bottom" constant="40" id="anx-Oi-fuX"/>
                             <constraint firstAttribute="bottom" secondItem="XpU-KJ-3IO" secondAttribute="bottom" constant="10" id="l5L-ZR-LNg"/>
                         </constraints>
                     </view>

@@ -16,7 +16,6 @@
                 <outlet property="productCollection" destination="3rM-Th-7Px" id="G30-hN-67g"/>
                 <outlet property="scrollViewHome" destination="Ml3-g2-6K3" id="hdi-39-jDd"/>
                 <outlet property="searchBar" destination="Yjw-va-AV8" id="8Tc-f3-Fzd"/>
-                <outlet property="switchButton" destination="XER-GV-cPl" id="CNM-1G-lml"/>
                 <outlet property="textSearch" destination="wmm-9K-EDo" id="vzI-Y9-wXE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -38,16 +37,16 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvE-RJ-CKT">
                                             <rect key="frame" x="0.0" y="0.0" width="369" height="50"/>
                                             <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avata1" translatesAutoresizingMaskIntoConstraints="NO" id="j89-DD-VTc" userLabel="avatar">
+                                                    <rect key="frame" x="319" y="0.0" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="bLw-nP-8RF"/>
+                                                    </constraints>
+                                                </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="DdN-m5-Z2z" userLabel="menu">
                                                     <rect key="frame" x="0.0" y="7.5" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="DdN-m5-Z2z" secondAttribute="height" multiplier="1:1" id="Lbl-2I-sC4"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="j89-DD-VTc" userLabel="avatar">
-                                                    <rect key="frame" x="319" y="0.0" width="50" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="bLw-nP-8RF"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
@@ -100,14 +99,8 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STC-Bs-i5T">
                                             <rect key="frame" x="0.0" y="176" width="369" height="50"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="switch" translatesAutoresizingMaskIntoConstraints="NO" id="XER-GV-cPl" userLabel="avatar">
-                                                    <rect key="frame" x="329" y="5" width="40" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="1l5-jJ-4QK"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yjw-va-AV8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="309" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="304" height="50"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yai-pd-PVs">
                                                             <rect key="frame" x="20" y="10" width="30" height="30"/>
@@ -118,7 +111,7 @@
                                                             <state key="normal" image="search"/>
                                                         </button>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wmm-9K-EDo">
-                                                            <rect key="frame" x="60" y="5" width="249" height="40"/>
+                                                            <rect key="frame" x="60" y="5" width="244" height="40"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
@@ -134,16 +127,26 @@
                                                         <constraint firstItem="wmm-9K-EDo" firstAttribute="top" secondItem="Yjw-va-AV8" secondAttribute="top" constant="5" id="vdp-Y3-HIz"/>
                                                     </constraints>
                                                 </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFe-8z-ZUl">
+                                                    <rect key="frame" x="324" y="5" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="bFe-8z-ZUl" secondAttribute="height" multiplier="1:1" id="Zoh-Bm-eVU"/>
+                                                        <constraint firstAttribute="width" constant="40" id="rhX-Sg-das"/>
+                                                    </constraints>
+                                                    <buttonConfiguration key="configuration" style="plain" image="add" title=""/>
+                                                    <connections>
+                                                        <action selector="createButton:" destination="-1" eventType="touchUpInside" id="Jnb-c6-nWg"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="XER-GV-cPl" firstAttribute="width" secondItem="XER-GV-cPl" secondAttribute="height" multiplier="1:1" id="A7P-32-abL"/>
+                                                <constraint firstAttribute="trailing" secondItem="bFe-8z-ZUl" secondAttribute="trailing" constant="5" id="ABo-GY-QH7"/>
+                                                <constraint firstAttribute="bottom" secondItem="bFe-8z-ZUl" secondAttribute="bottom" constant="5" id="Hkf-HE-2h1"/>
                                                 <constraint firstAttribute="bottom" secondItem="Yjw-va-AV8" secondAttribute="bottom" id="KZt-kW-wcv"/>
-                                                <constraint firstAttribute="trailing" secondItem="XER-GV-cPl" secondAttribute="trailing" id="O4R-eo-IWa"/>
+                                                <constraint firstItem="bFe-8z-ZUl" firstAttribute="leading" secondItem="Yjw-va-AV8" secondAttribute="trailing" constant="20" id="Sd1-KJ-ohk"/>
                                                 <constraint firstItem="Yjw-va-AV8" firstAttribute="top" secondItem="STC-Bs-i5T" secondAttribute="top" id="cPt-rf-X7H"/>
-                                                <constraint firstItem="XER-GV-cPl" firstAttribute="top" secondItem="STC-Bs-i5T" secondAttribute="top" constant="5" id="eiK-XH-98O"/>
-                                                <constraint firstAttribute="bottom" secondItem="XER-GV-cPl" secondAttribute="bottom" constant="5" id="hQk-iC-MQC"/>
-                                                <constraint firstItem="XER-GV-cPl" firstAttribute="leading" secondItem="Yjw-va-AV8" secondAttribute="trailing" constant="20" id="qFF-vA-Srq"/>
                                                 <constraint firstItem="Yjw-va-AV8" firstAttribute="leading" secondItem="STC-Bs-i5T" secondAttribute="leading" id="rAS-ET-H9a"/>
+                                                <constraint firstItem="bFe-8z-ZUl" firstAttribute="top" secondItem="STC-Bs-i5T" secondAttribute="top" constant="5" id="w1K-ru-AOb"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -197,7 +200,7 @@
                                         <constraint firstAttribute="trailing" secondItem="b0z-Jl-s3p" secondAttribute="trailing" id="pEV-KR-5uO"/>
                                     </constraints>
                                 </view>
-                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3rM-Th-7Px">
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3rM-Th-7Px">
                                     <rect key="frame" x="25" y="520" width="364" height="1416"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e4V-8Z-E39">
@@ -262,10 +265,10 @@
         </view>
     </objects>
     <resources>
-        <image name="avatar" width="48" height="48"/>
+        <image name="add" width="50" height="50"/>
+        <image name="avata1" width="3024" height="4032"/>
         <image name="menu" width="50" height="50"/>
         <image name="search" width="50" height="50"/>
-        <image name="switch" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

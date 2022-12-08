@@ -9,6 +9,9 @@ import UIKit
 
 class AddressViewController: UIViewController {
 
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var backButtonView: UIView!
     @IBOutlet weak var addView: UIView!
     @IBOutlet weak var footerView: UIView!
@@ -29,6 +32,10 @@ class AddressViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        usernameLabel.text = userIsLoggin?.username
+        addressLabel.text = userIsLoggin?.address
+        phoneLabel.text = userIsLoggin?.phone
         
         tabviewOrder.dataSource = self
         tabviewOrder.delegate = self

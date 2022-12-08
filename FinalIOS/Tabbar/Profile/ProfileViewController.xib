@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="backButton" destination="Nh6-zp-cIv" id="WLG-WW-Mde"/>
                 <outlet property="bannerProfile" destination="wbO-qS-IsI" id="IHy-qP-96u"/>
+                <outlet property="emailLabel" destination="a9P-7X-TdI" id="snR-6K-yNg"/>
                 <outlet property="favouritImg" destination="v1y-wL-0wX" id="bkP-mC-Lq9"/>
                 <outlet property="favouritView" destination="tnt-mi-wV3" id="FoG-Nx-2Ye"/>
                 <outlet property="historyImg" destination="QUg-Z1-bH1" id="Zpe-ZM-s5i"/>
@@ -21,6 +22,7 @@
                 <outlet property="profileView" destination="TkR-Uz-Joz" id="d2x-mg-UQt"/>
                 <outlet property="settingImg" destination="paB-kZ-pNf" id="I50-7U-bLx"/>
                 <outlet property="settingView" destination="VbG-7u-Cvo" id="hCY-87-R0h"/>
+                <outlet property="usernameLabel" destination="TQb-Ie-sZk" id="9fY-qx-CZG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -61,7 +63,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbO-qS-IsI">
                     <rect key="frame" x="25" y="174" width="364" height="100"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="model-2" translatesAutoresizingMaskIntoConstraints="NO" id="cWK-iB-MOY">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avata1" translatesAutoresizingMaskIntoConstraints="NO" id="cWK-iB-MOY">
                             <rect key="frame" x="10" y="10" width="80" height="80"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="80" id="UIv-9l-CNL"/>
@@ -355,12 +357,12 @@
         </view>
     </objects>
     <resources>
+        <image name="avata1" width="3024" height="4032"/>
         <image name="in1" width="50" height="50"/>
         <image name="in2" width="50" height="50"/>
         <image name="in3" width="50" height="50"/>
         <image name="in4" width="50" height="50"/>
         <image name="left-w" width="30" height="30"/>
-        <image name="model-2" width="4480" height="6720"/>
         <image name="r" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

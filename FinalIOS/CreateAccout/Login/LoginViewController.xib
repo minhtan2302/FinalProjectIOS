@@ -76,10 +76,13 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="*********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ncT-X7-Xmg">
+                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="*********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ncT-X7-Xmg">
                                     <rect key="frame" x="0.0" y="30" width="374" height="30"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                    <connections>
+                                        <action selector="textEditingDidEnd:" destination="-1" eventType="editingDidEnd" id="GXW-c5-o61"/>
+                                    </connections>
                                 </textField>
                             </subviews>
                             <constraints>
@@ -108,7 +111,10 @@
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xvl-O5-bHX">
                                     <rect key="frame" x="0.0" y="30" width="374" height="30"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                    <connections>
+                                        <action selector="textEditingDidEnd:" destination="-1" eventType="editingDidEnd" id="sig-9M-43T"/>
+                                    </connections>
                                 </textField>
                             </subviews>
                             <constraints>
@@ -336,7 +342,7 @@
                 <constraint firstItem="7wH-Af-Rkv" firstAttribute="leading" secondItem="oid-n8-VKa" secondAttribute="leading" constant="23" id="sj1-QI-xg6"/>
                 <constraint firstItem="Tr9-Ls-U12" firstAttribute="leading" secondItem="oid-n8-VKa" secondAttribute="leading" constant="30" id="tZ4-mn-HYr"/>
             </constraints>
-            <point key="canvasLocation" x="131.8840579710145" y="125.89285714285714"/>
+            <point key="canvasLocation" x="-238" y="128"/>
         </view>
     </objects>
     <resources>

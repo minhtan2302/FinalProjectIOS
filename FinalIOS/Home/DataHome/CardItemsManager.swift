@@ -87,7 +87,7 @@ class OrderTransactionManager {
         
         let itemCart: [CardItem] = cardItemManager.getList()
         let total = cardItemManager.calculateTotalPrice()
-        let item: OrderTransaction = OrderTransaction(cartItems: itemCart,totalItems: total, paymentDate: Date.now)
+        let item: OrderTransaction = OrderTransaction(cartItems: itemCart,totalItems: total, paymentDate: Date().displayFormatted)
         
         historyOrder.append(item)
         UserDefaultAccessor.shared.saveObject(historyOrder, forKey: UserDefaultKeysOrder.ORDER_LIST)
@@ -127,5 +127,17 @@ class ProductFavoriteManager {
     func listFavorite() -> [FavoriteItem] {
         let favorites: [FavoriteItem] = UserDefaultAccessor.shared.getObjects(type: FavoriteItem.self, key: UserDefaultKeysFavorite.FAVORITE_LIST)
         return favorites
+    }
+}
+extension Date {
+    var displayFormatted: String {
+        self.formatted(
+            .dateTime
+                .year(.twoDigits)
+                .month(.wide)
+                .day(.twoDigits)
+                .hour(.conversationalDefaultDigits(amPM: .omitted))
+                .minute(.twoDigits)
+            )
     }
 }

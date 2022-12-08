@@ -10,9 +10,8 @@ import UIKit
 class OrderTransaction: Codable {
     var cartItems: [CardItem] = []
     var totalItems: Double = Double()
-    var paymentDate: Date = Date()
-    
-    init(cartItems: [CardItem],totalItems: Double, paymentDate:Date) {
+    var paymentDate: String = Date().displayFormatted
+    init(cartItems: [CardItem],totalItems: Double, paymentDate:String) {
         self.cartItems = cartItems
         self.totalItems = totalItems
         self.paymentDate = paymentDate
